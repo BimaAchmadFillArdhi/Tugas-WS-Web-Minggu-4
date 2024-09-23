@@ -1,0 +1,10 @@
+.margin_top{
+    margin-top: 180px;
+}
+
+.gambar{
+    background-image: url('3094352.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
