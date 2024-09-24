@@ -1,81 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-   
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/4.5.2-bootstrap.min.css">
-
-    <style>
-        /* Custom CSS to center the form */
-        .centered-form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .margin-top{
-            margin-top: 180px;
-        }
-
-        /* Custom CSS for the side image */
-        .side-image {
-            background-image: url('your-image-url.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-    </style>
-</head>
-<body class="login-page">
-    <div class="container">
-        <div class="row margin-top">
-
-            <div class="col-md-6 side-image">
-                <img src="images/login.png" class="img-fluid" alt="login-image">
-            </div>
-
-            <div class="col-md-6">
-                <div class="card custom-card">
-                    <div class="card-header">
-                        Login
-                    </div>
-                    <div class="card-body">
-                        <form method="post" action="proses.php">
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="pasword" placeholder="Enter your password">
-                            </div>
-                            <div class="form-group">
-                                <div class="text-center">
-                                    <a href="#">Forgot Password?</a>
-                                </div>
-                            </div>
-                            <button type="submit" name="login" class="btn btn-primary btn-block">Login</button>
-                            <div class="form-group mt-4">
-                                <div class="text-center">
-                                    <span>Don't have an account?</span>
-                                    <a href="register.php">Register Here</a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" >
+  </head>
+  <body class= "login-page">
+    <div class = "container">
+      
+      <div class= "row margin_top">
+        <div class ="col-md-6 gambar">
+          <img src="gambar/3094352.jpg" alt="login" class = "img-fluid">
         </div>
+        
+        <div class = "col-md-6 card custom-card">
+          <div class= "card-header">
+            Login
+          </div>
+          
+          <div class = "card-body">
+            <form action="aksilogin.php" method="post" enctype="multipart/form-data">
+              <div>
+                <label for="" class="form-label mb-1">Masukkan Username</label>
+                <input type="text" class= "form-control mb-3" name="username" placeholder= "Masukkan Username">
+              </div>
+              <div>
+                <label for="" class="form-label mb-1">Masukkan Password</label>
+                <input type="password" class= "form-control mb-3" name = "password" placeholder= "Masukkkan Password">
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit" name = "login" class="btn btn-primary mb-3">
+                  Login
+                </button>
+              </div>
+            </form>
+
+            <form action="register.php" method ="post">
+              <div class="form-group d-grid gap-2">
+                <button type="submit" name="registrasi" class ="btn btn-outline-primary mb-3">
+                  Registrasi
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>
